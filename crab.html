@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+	<title> Mister Bangus - Crabs </title>
+	<link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Poppins font link from GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap4 & Font-Awesome CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+    <!-------- Header --------->
+	<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="review.html">REVIEWS</a></li>
+					<li><a href="faq.html">FAQS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Menu - LET'S CRAB IT</h1>
+	</section>
+
+    <!-------- Blog --------->
+
+	<section class="blog-content">
+		<div class="row">
+			<div class="blog-left">
+				<img class="prod" src="Images/Catalog.jpg">
+				<h2>Mister Bangus Catalog</h2>
+				<p>From our prized bangus to crabs, from lobsters to prawns, and even to our bottled items that give extra oomph to your meal: Mister Bangus has it all,
+				and we assure that all of them will leave a great experience for your tastebuds. </p>
+				<br>
+				<h2>LET'S CRAB IT</h2>
+			</div>
+			<div class="blog-right">
+				<h3>Product Catalog</h3>
+				<a href="bangus.html">
+				<div>
+					<span>BANGUSarap</span>
+					<span>7</span>
+				</div>
+				</a>
+				<a href="crab.html">
+				<div>
+					<span>LET'S CRAB IT</span>
+					<span>1</span>
+				</div>
+				</a>
+				<a href="lobster.html">
+				<div>
+					<span>LOVESTERS</span>
+					<span>1</span>
+				</div>
+				</a>
+				<a href="prawn.html">
+				<div>
+					<span>You got PRAWNED</span>
+					<span>2</span>
+				</div>
+				</a>
+				<a href="bottled.html">
+				<div>
+					<span>BOTTLED Yummies</span>
+					<span>5 (TBA)</span>
+				</div>
+				</a>
+			</div>
+		</div>
+
+
+	  	<div class="catalog">
+			<div class="catalog-prod">
+				<a href="crab1.html">
+					<img src="MB_Products/livemudcrabs0.jpg">
+				</a>
+			</div>
+			<div class="catalog-desc">
+				<a href="crab1.html">
+					<h3>Live Mud Crabs</h3>
+					<p>Small (3-4 pcs) : PHP 850<br>
+					Medium (2-3 pcs) : PHP 900<br>
+					Big (1-2 pcs) : PHP 1000</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="comment-box">
+				<h3>Leave a suggestion</h3>
+				<form class="comment-form" method="post" action="cartcontroller.php?action=add&code=3">
+					<input type="text" placeholder="Enter Name">
+					<input type="email" placeholder="Enter Email">
+					<textarea rows="5" placeholder="Your suggested products that you would like to see in our store in the future"></textarea>
+					<br>
+					<button type="submit" class="mainbutton redbutton">POST COMMENT</button>
+				</form>
+			</div>
+		</div>
+</section>
+
+	<!-------- Footer ---------->
+
+	<!-------- Footer ---------->
+		<section class="footer">
+		<h4>About Us</h4>
+		<p>Mister Bangus is a seafood-selling business rooted in Dagupan City.<br>Part of its earnings are also sent for a cancer patient's treatment.</p>
+		<div class="icons">
+			<a href="https://www.instagram.com/misterbangusfarmph/">
+				<i class="fa fa-instagram"> Mister Bangus</i>
+			</a>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> by Cahate, Ravacio, Suelto, Urmenita </p>
+		<p> © 2021 MISTER BANGUS </p>
+	</section>
+
+<!-------- JavaScript for Menu Navigation --------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+</html>

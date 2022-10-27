@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+	<title> Mister Bangus - Contact </title>
+	<link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Poppins font link from GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap4 & Font-Awesome CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+    <!-------- Header --------->
+	<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="review.html">REVIEWS</a></li>
+					<li><a href="faq.html">FAQS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+	</section>
+
+    <!-------- Contact Us --------->
+
+
+	<section class="location">
+			<h1> For Pick-up </h1> <br>
+		<h2> Manila Location: </h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.9573552486869!2d120.99715032887919!3d14.555356645272811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9653f6d8d53%3A0xff97b5b68149b9fe!2s2009%20Sandejas%2C%20Pasay%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1634791535977!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+
+	<section class="location">
+
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h4> Provincial Address </h4>
+						<h5>361 Lucao District</h5>
+						<p>Dagupan City, Pangasinan 2400</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h4> Manila Address </h4>
+						<h5>2009 Sandejas Street, Brgy. 47</h5>
+						<p>Sen. Gil Puyat Avenue, Pasay City</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+63 9995736314</h5>
+						<p>Monday to Friday, 7AM to 9PM</p>
+						<p>Saturday and Sunday, 8AM to 5PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>misterbangusfarmph@gmail.com</h5>
+						<p>Email us for any orders or inquiries</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-instagram"></i>
+					<span>
+						<h5>@misterbangusfarmph</h5>
+						<p>You can also DM us for orders and inquiries</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Enter your name" required>
+					<input type="email" name="email" placeholder="Enter your email address" required>
+					<input type="text" name="subject" placeholder="Enter your subject" required>
+					<textarea rows="8" name="message" placeholder="Message" required></textarea>
+					<br>
+					<button type="submit" class="mainbutton redbutton">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-------- Footer ---------->
+		<section class="footer">
+			<h4>About Us</h4>
+		<p>Mister Bangus is a seafood-selling business rooted in Dagupan City.<br>Part of its earnings are also sent for a cancer patient's treatment.</p>
+			<div class="icons">
+				<a href="https://www.instagram.com/misterbangusfarmph/">
+					<i class="fa fa-instagram"> Mister Bangus</i> </a>
+			</div>
+			<p>Made with <i class="fa fa-heart-o"></i> by Cahate, Ravacio, Suelto, Urmenita </p>
+			<p> © 2021 MISTER BANGUS </p>
+		</section>
+
+<!-------- JavaScript for Menu Navigation --------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+</html>
